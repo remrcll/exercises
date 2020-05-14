@@ -54,4 +54,3 @@ console.log(d + c);
 
 //11. Print the remainder when "resultOne" is divided by "resultTwo" to the console.
 
-console.log(resultOne % resultTwo);
