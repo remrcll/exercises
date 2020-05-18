@@ -1,3 +1,5 @@
+"use strickt"
+
 // 1. Declare a variable named isDog. If true, print 'pat, pat' and if not, print 'find me a dog to pat!'
 let isDog = "dog";
 let isCat = "cat";
@@ -9,6 +11,7 @@ let vizsla = isDog;
 // 2. Declare a variable named speedCheck. If speedlimit is 50km/h, and your speed is above that, print 'you're going too fast!'. If speed is lower than 50km/h, print 'You're driving below the speed limit, Oma'.
 
 let speedCheck = 50;
+let message;
 
 speedCheck < 60 ? message = "you're going too fast!" : message = "You're driving below the speed limit, Oma";
 console.log(message);
@@ -19,6 +22,7 @@ console.log(message);
 // 3. Declare a variable named age. If age is below 16, print "serve butter beer". Otherwise print "serve beer".
 
 let age = 16;
+
 
 age < 15 ? message = "serve beer" : message = "serve butter beer";
 console.log(message);
