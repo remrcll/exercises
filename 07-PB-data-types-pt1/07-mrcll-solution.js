@@ -31,16 +31,14 @@ let isMarried = false;
 
 // 8. Print the following "name is married: true/false", using your declared variables.
 
-name = isMarried ? console.log(`${name} is married: true`) : console.log(`${name} is married: false`);
+console.log(`${name} is married: ${isMarried}`);
 
 // 9. Declare a variable called programmingLanguage and assign the string "JavaScript". Declare a variable called isFun and give it a value of true. Print "JavaScript is fun: true" to the console, using your declared variables.
 
 let programmingLanguage = "JavaScript";
 let isFun = true;
-let answer;
 
-answer = isFun ? `${programmingLanguage} is fun: true` : `${programmingLanguage} is fun: false`;
-console.log(answer);
+console.log(`${programmingLanguage} is fun: ${isFun}`);
 
 
 // 10. Print the J and S of JavaScript from the variable programmingLanguage to the console.
