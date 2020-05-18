@@ -1,4 +1,4 @@
-"use strickt"
+"use strict"
 
 // 1. Declare a variable named isDog. If true, print 'pat, pat' and if not, print 'find me a dog to pat!'
 let isDog = "dog";
@@ -43,6 +43,7 @@ console.log(isStudent);
 
 // 5. Declare a variable named okMarie. Check if there is 'cake' - if so, print "Let them eat cake". If not, print "Oh, bother".
 let okMarie = 'cake';
-(okMarie == 'cake') ? console.log('let them eat cake!'): console.log('oh, bother');
+(okMarie === 'cake') ? console.log('let them eat cake!'): console.log('oh, bother');
 
-(okMarie == 'vegetabe') ? console.log('let them eat cake!'): console.log('oh, bother');
+(okMarie === 'vegetable') ? console.log('let them eat cake!'): console.log('oh, bother');
+
