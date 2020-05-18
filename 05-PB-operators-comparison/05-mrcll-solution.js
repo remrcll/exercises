@@ -31,7 +31,7 @@ console.log("6. answer: " + ((z * x) > (z + y)));
 
 // 7. Subtract z from x and check whether this result is less than y divided by z.
 
-console.log("7. answer: " + ((z - x) < (y / z)));
+console.log("7. answer: " + ((x - z) < (y / z)));
 
 // 8. Check whether z, x and y are equal.
 
@@ -43,7 +43,7 @@ console.log("9. answer: " + ((x % z) === (y % z)));
 
 // 10. Check whether z added to x is greater than y minus z. If it is not, find an operator which will give a result of true.
 
-console.log("10.1. answer: " + (x > (y - z)));
-console.log("10.2. answer: " + (x < (y - z)));
+console.log("10.1. answer: " + ((z + x) > (y - z)));
+console.log("10.2. answer: " + ((z + x) <= (y - z)));
 
 // 11. BONUS CHALLENGE: Try increasing script readability by adding question headings to your output before each result.
