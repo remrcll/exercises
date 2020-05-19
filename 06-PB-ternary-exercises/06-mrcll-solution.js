@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // 1. Declare a variable named isDog. If true, print 'pat, pat' and if not, print 'find me a dog to pat!'
 let isDog = "dog";
