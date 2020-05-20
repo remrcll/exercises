@@ -37,7 +37,7 @@ let random = Math.random(); // between [0 (inclusive) and [1 (exclusive)
 let bigger = random * 6; // multiplication with upper limit
 //console.log(bigger);
 
-let roundBigger = Math.round(bigger); // so that we don't break the upper limit
-//console.log(roundBigger);
+let roundBigger = Math.ceil(bigger); // so that we don't break the upper limit
+console.log(roundBigger);
 
-let oneToSix = roundBigger === 0 ? console.log(roundBigger + 1) : console.log(roundBigger);
+//let oneToSix = roundBigger === 0 ? console.log(roundBigger + 1) : console.log(roundBigger);
