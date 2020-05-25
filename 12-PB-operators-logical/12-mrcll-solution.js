@@ -39,7 +39,7 @@ console.log(x > z && x > y);
 
 // b) x is NOT equal to y.
 
-console.log(x != y);
+console.log(x !== y);
 
 //BONUS: True, because 10 is not equal to 15;
 
@@ -51,7 +51,7 @@ console.log(z < y || z > x);
 
 //d) x is equal to z OR x is NOT equal to y.
 
-console.log(x == z || x != y);
+console.log(x === z || x !== y);
 
 //BONUS: True because it's enough that one of the statements are true, in this case : x != y;
 
