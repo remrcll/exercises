@@ -127,9 +127,7 @@ if ((myNum4 % 7 === 0) || (myNum5 % 11 === 0)) {
 
 if (myNum4 === myNum5) {
     console.log((myNum4 + myNum5) * 3);
-}
-
-else {
+} else {
     console.log(myNum4 + myNum5);
 }
 
@@ -137,9 +135,7 @@ else {
 
 if (myNum1 > 19) {
     console.log((myNum1 - 19) * 2);
-}
-
-else {
+} else {
     console.log(myNum1 - 19);
 }
 
@@ -151,16 +147,13 @@ let age = 82;
 if (age < 18) {
     console.log(`${firstName} is a child`);
 }
- 
+
 if (age >= 13 && age < 20) {
     console.log(`${firstName} is a teenager`);
 }
 
 if (age >= 20 && age < 30) {
     console.log(`${firstName} is a young adult`);
-}
-
-else {
+} else {
     console.log(`${firstName} is an adult`);
 }
-
