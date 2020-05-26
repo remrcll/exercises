@@ -28,7 +28,7 @@ console.log("Answer 1/2: " + (3 === "3"));
 // Store the value true to a variable. Using a ternary operator,print the false option by checking the value of the initial variable.
 
 let truthy = true
-console.log("Answer 2: " +  (truthy != true ? true : false));
+console.log("Answer 2: " +  (truthy !== true ? true : false));
 
 //3. Short Circuit
 //Given the code below, what will print when when we console log name? Comment your answer in the js file.
