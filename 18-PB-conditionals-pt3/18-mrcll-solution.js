@@ -31,22 +31,57 @@ if (aleezaAverage > lizAverage) {
 if (aleezaAverage > lizAverage) {
     if (aleezaAverage > maryAverage) {
         console.log(`The winner is Aleeza's team, with an average score of ${aleezaAverage}.`);
+    } else if (aleezaAverage === maryAverage) {
+        console.log(`The winner is Aleeza's and Mary's team with a draw of ${aleezaAverage} average.`)
     } else {
         console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
     }
-} else if (aleezaAverage === lizAverage) {
-    if (aleezaAverage === maryAverage) {
-        console.log(`It's a draw with an average score of ${aleezaAverage}`);
-    }
-    else if (lizAverage > maryAverage) {
-        console.log(`The winner is Liz's team, with an average score of ${lizAverage}.`);
-    } else {
-        console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
-    }
-} else {
+} else if (lizAverage > aleezaAverage) {
     if (lizAverage > maryAverage) {
-        console.log(`The winner is Liz's team, with an average score of ${lizAverage}.`);
+        console.log(`The winner is Liz's team, with an average score of ${aleezaAverage}.`);
+    } else if (lizAverage === maryAverage) {
+        console.log(`The winner is Liz's and Mary's team with a draw of ${aleezaAverage} average.`)
     } else {
         console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
+    }
+} else if (maryAverage > aleezaAverage) {
+    if (maryAverage > lizAverage) {
+        console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
+    } else if (lizAverage === maryAverage) {
+        console.log(`The winner is Aleeza's and Mary's team with a draw of ${aleezaAverage} average.`)
+
+    } else {
+        console.log(`The winner is Liz's team, with an average score of ${lizAverage}.`);
+    }
+} else if (maryAverage > lizAverage) {
+    if (maryAverage > aleezaAverage) {
+        console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
+    } else if (aleezaAverage === maryAverage) {
+        console.log(`The winner is Aleeza's and Mary's team with a draw of ${aleezaAverage} average.`)
+
+    } else {
+        console.log(`The winner is Aleeza's team, with an average score of ${aleezaAverage}.`);
+    }
+} else if (aleezaAverage === lizAverage && aleezaAverage === maryAverage && lizAverage === maryAverage) {
+    console.log(`It's a draw with an average score of ${aleezaAverage}`);
+
+}
+ else if (lizAverage === maryAverage) {
+     if (lizAverage > aleezaAverage) {
+        console.log(`The winner is Liz's and Mary's team, with a draw score of ${maryAverage}.`);
+     } else {
+         console.log(`The winner is Aleeza's team, with an average score of ${aleezaAverage}.`);
+     }
+} else if (aleezaAverage === lizAverage) {
+    if (aleezaAverage > maryAverage) {
+        console.log(`The winner is Aleeza's and Liz's team, with a draw score of ${aleezaAverage}.`);
+    }   else {
+        console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
+    }
+} else if (aleezaAverage === maryAverage) {
+    if (aleezaAverage > lizAverage) {
+        console.log(`The winner is Aleeza's and Mary's team, with a draw score of ${aleezaAverage}.`);
+    }   else {
+        console.log(`The winner is Liz's team, with an average score of ${lizAverage}.`);
     }
 }
