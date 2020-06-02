@@ -15,10 +15,9 @@ let i2 = 1;
 let sum = 0;
 while (i2 <= 20) {
     sum = sum + i2;
-    console.log(sum);
     i2++;
 }
-
+console.log(sum);
 
 console.log("Second loop is over");
 
