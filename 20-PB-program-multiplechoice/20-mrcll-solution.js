@@ -38,7 +38,7 @@ switch (expression2) {
     case 4:
         console.log(`In Hungary grade ${expression2} is like almost good, but not good enough.`);
         break;
-    case 4:
+    case 5:
         console.log(`In hungary grade ${expression2} is the best note.`);
         break;
 
@@ -77,16 +77,16 @@ switch (expression3) {
 // let perc1 = 50;
 // let perc2 = 70;
 
-let percentageComplete = 100;
+let percentageComplete = 51;
 let caseResult;
 
 if (percentageComplete < 30) {
     caseResult = 1;
-} else if (percentageComplete >= 30 && percentageComplete <= 50) {
+} else if (percentageComplete <= 50) {
     caseResult = 2;
-} else if (percentageComplete >= 51 && percentageComplete <=80) {
+} else if (percentageComplete <=80) {
     caseResult = 3;
-} else if (percentageComplete >= 81 && percentageComplete <= 99) {
+} else if (percentageComplete <= 99) {
     caseResult = 4;
 } else if (percentageComplete <= 100) {
     caseResult = 5;
