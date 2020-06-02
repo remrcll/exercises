@@ -12,9 +12,13 @@ let maryScoreOne = 97;
 let maryScoreTwo = 134;
 let maryScoreThree = 105;
 
-let aleezaAverage = (aleezaScoreOne + aleezaScoreTwo + aleezaScoreThree) / 3;
-let lizAverage = (lizScoreOne + lizScoreTwo + lizScoreThree) / 3;
-let maryAverage = (maryScoreOne + maryScoreTwo + maryScoreThree) / 3;
+// let aleezaAverage = (aleezaScoreOne + aleezaScoreTwo + aleezaScoreThree) / 3;
+// let lizAverage = (lizScoreOne + lizScoreTwo + lizScoreThree) / 3;
+// let maryAverage = (maryScoreOne + maryScoreTwo + maryScoreThree) / 3;
+
+let aleezaAverage = 1;
+let lizAverage = 2;
+let maryAverage = 2;
 
 console.log(aleezaAverage, lizAverage, maryAverage);
 
@@ -48,7 +52,7 @@ if (aleezaAverage > lizAverage) {
     if (maryAverage > lizAverage) {
         console.log(`The winner is Mary's team, with an average score of ${maryAverage}.`);
     } else if (lizAverage === maryAverage) {
-        console.log(`The winner is Aleeza's and Mary's team with a draw of ${aleezaAverage} average.`)
+        console.log(`The winner is Aleeza's and Mary's team with a draw of ${maryAverage} average.`)
 
     } else {
         console.log(`The winner is Liz's team, with an average score of ${lizAverage}.`);
