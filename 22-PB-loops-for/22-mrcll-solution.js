@@ -27,25 +27,35 @@ let fiveBottle = 'There are five bottle of beer on the wall.'
 
 for (let i = 0; i <= 4; i++) {
 
-    if (i = 1) {
+    if (i === 1) {
         console.log(oneBottle);
     }
 
-    if (i = 2) {
+    if (i === 2) {
         console.log(twoBottle);
     }
 
-    if (i = 3) {
+    if (i === 3) {
         console.log(threeBottle);
     }
 
-    if (i = 4) {
+    if (i === 4) {
         console.log(fourBottle);
     }
 
-    if (i = 5) {
+    if (i === 5) {
         console.log(fiveBottle);
     }
+}
+
+// Simple version:
+
+console.log(`
+Simple version
+`)
+
+for (let bottles = 1; bottles <= 5; bottles++) {
+    console.log(bottles > 1 ? `There is ${bottles} bottles of beer on the wall` : `There is one bottle of beer on the wall. `) 
 }
 
 // 3.
@@ -65,8 +75,15 @@ console.log(`
 `)
 
 for (let i = 0; i <= 10; i++) {
-    console.log(`${i} * 9 = ` + i * 9);
+      console.log(`${i} * 9 =  ${i * 9}`);
+
+      //Bonus
+
+      for (let j = 1; j <= 10; j++) {
+        console.log(`${i} * ${j} =  ${i * j}`);
+    }
 }
+
 
 // 5.
 console.log(`
@@ -93,11 +110,12 @@ console.log(`
 
 
 let sum = 0;
-for (let i = 0; i < 1000; i++)
-{
-    if (i % 3 === 0 || i % 5 === 0)
-    {
-       sum += i;
+for (let i = 0; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum += i;
     }
 }
 console.log(sum);
+
+//7. 
+
