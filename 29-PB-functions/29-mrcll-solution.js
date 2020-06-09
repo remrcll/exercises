@@ -184,3 +184,24 @@ console.log(isWaldoHereResult3);
 const isWaldoHereResult4 = isWaldoHere('waldo is here');
 console.log(isWaldoHereResult4);
 
+//10.
+
+console.log(`
+10. Pie.
+
+I think the second example is wrong, but maybe I'm wrong...
+`);
+
+const equalSlices = (noOfSlices, noOfRecipients, amountToGet) => (noOfRecipients * amountToGet) === noOfSlices ? true : false;
+
+const equalSlicesResult1 = equalSlices(11, 5, 3);
+console.log(equalSlicesResult1);
+
+const equalSlicesResult2 = equalSlices(8, 3, 2);
+console.log(equalSlicesResult2);
+
+const equalSlicesResult3 = equalSlices(8, 3, 3) ;
+console.log(equalSlicesResult3);
+
+const equalSlicesResult4 = equalSlices(24, 12, 2);
+console.log(equalSlicesResult4);
