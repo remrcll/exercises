@@ -3,14 +3,17 @@
 
 const exponential = (num1, num2) => {
 
-    if (num1 && num2 !== isNaN) {
+    if (isNaN(num1) === false && isNaN(num2) === false) {
         for (let i = 1; i <= num2; i++) {
             let result = (num1 ** i);
             console.log(result);
         }
+    } else {
+        console.log('Either of the values are not a number');
     }
 }
-
+exponential('hello', 5);
+exponential(3, 5);
 exponential(2, 8);
 
 //2. 
