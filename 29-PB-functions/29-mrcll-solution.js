@@ -100,13 +100,40 @@ console.log(`
 `);
 
 const countOccurrences = (string, letter) => {
- let letterCount = 0;
- for (let position = 0; position < string.length; position++) {
-    if (string[position] === letter) {
-      letterCount += 1;
-      }
-  }
-  return letterCount;
+    let letterCount = 0;
+    for (let position = 0; position < string.length; position++) {
+        if (string[position] === letter) {
+            letterCount += 1;
+        }
+    }
+    return letterCount;
 }
 
-console.log(countOccurrences('this is a string', 'i'));
+const countOccurrencesResult = countOccurrences('this is a string', 'i')
+console.log(countOccurrencesResult);
+
+//6.
+
+console.log(`
+6. X To The Power of X.
+`);
+
+const calculateBaseToExponent = (num, exp) => {
+    return num ** exp;
+}
+
+const calculateBaseToExponentResult1 = calculateBaseToExponent(5, 5);
+console.log(calculateBaseToExponentResult1);
+
+const calculateBaseToExponentResult2 = calculateBaseToExponent(10, 10);
+console.log(calculateBaseToExponentResult2);
+
+const calculateBaseToExponentResult3 = calculateBaseToExponent(3, 3);
+console.log(calculateBaseToExponentResult3);
+
+//6.
+
+console.log(`
+7. Dog Years. 
+`);
+
