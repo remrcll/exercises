@@ -29,7 +29,7 @@ console.log(`
 2. Cubed. 
 `);
 const cubeSums = (num1 = 0, num2 = 0, num3 = 0) => {
-    
+
     let cube = 3;
 
     if (isNaN(num1) === false && isNaN(num2) === false && isNaN(num3) === false) {
@@ -200,8 +200,54 @@ console.log(equalSlicesResult1);
 const equalSlicesResult2 = equalSlices(8, 3, 2);
 console.log(equalSlicesResult2);
 
-const equalSlicesResult3 = equalSlices(8, 3, 3) ;
+const equalSlicesResult3 = equalSlices(8, 3, 3);
 console.log(equalSlicesResult3);
 
 const equalSlicesResult4 = equalSlices(24, 12, 2);
 console.log(equalSlicesResult4);
+
+//11.
+
+console.log(`
+11. XO Create a function that takes a string, checks if it has the same number of 'x's and 'o's and returns either true or false.
+`);
+
+const countOccurrencesXO = (string, letter1, letter2) => {
+    let toLowerCase = string.toLowerCase()
+    let letterCount1 = 0;
+    for (let position = 0; position < toLowerCase.length; position++) {
+        if (toLowerCase[position] === letter1) {
+            letterCount1 += 1;
+        }
+    }
+
+    let letterCount2 = 0;
+    for (let position = 0; position < toLowerCase.length; position++) {
+        if (toLowerCase[position] === letter2) {
+            letterCount2 += 1;
+        }
+    }
+
+    if (letterCount1 === 0 && letterCount2 === 0) {
+        return true;
+    } else if (letterCount1 === letterCount2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+const XOcountOccurrencesResult1 = countOccurrencesXO('ooxx', 'o', 'x')
+console.log(XOcountOccurrencesResult1);
+
+const XOcountOccurrencesResult2 = countOccurrencesXO('xooxx', 'o', 'x')
+console.log(XOcountOccurrencesResult2);
+
+const XOcountOccurrencesResult3 = countOccurrencesXO('ooxXm', 'o', 'x')
+console.log(XOcountOccurrencesResult3);
+
+const XOcountOccurrencesResult4 = countOccurrencesXO('zpzpzpp', 'o', 'x')
+console.log(XOcountOccurrencesResult4);
+
+const XOcountOccurrencesResult5 = countOccurrencesXO('zzoo', 'o', 'x')
+console.log(XOcountOccurrencesResult5);
