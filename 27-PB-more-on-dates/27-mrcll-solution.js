@@ -4,12 +4,16 @@
 
 
 let today = new Date();
-let yearToday = today.getFullYear();
-let monthToday = today.getMonth();
-let dayToday = today.getDate();
-let endOfMonth = new Date(yearToday, monthToday, 0).getDate();
-const remainingDays = (today) => {
+today.setFullYear(2020, 1, 1);
+
+const remainingDays = (now) => {
+    let yearToday = now.getFullYear();
+    let monthToday = now.getMonth();
+    let dayToday = now.getDate();
+    let endOfMonth = new Date(yearToday, monthToday + 1, 0).getDate();
     console.log(endOfMonth - dayToday);
+    //console.log(endOfMonth);
 }
 
-remainingDays();
+remainingDays(today);
+
