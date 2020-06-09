@@ -131,9 +131,17 @@ console.log(calculateBaseToExponentResult2);
 const calculateBaseToExponentResult3 = calculateBaseToExponent(3, 3);
 console.log(calculateBaseToExponentResult3);
 
-//6.
+//7.
 
 console.log(`
 7. Dog Years. 
 `);
 
+const dogAge = (doggieYears) => {
+    let humanYears = 7;
+    let result = doggieYears * humanYears;
+    return `Your doggo is ${result} years old in human years!`
+}
+
+const dogAgeResult = dogAge(4);
+console.log(dogAgeResult);
