@@ -2,6 +2,10 @@
 
 //1. 
 
+console.log(`
+1. Add Up.
+`);
+
 const addNumbers = num => {
     let result = 0;
     for (let i = 1; i <= num; i++) {
@@ -19,6 +23,9 @@ const addUp600 = addNumbers(600);
 console.log(addUp600);
 
 //2.
+console.log(`
+2. Cubed. 
+`);
 
 let cube = 3;
 
@@ -46,6 +53,10 @@ console.log(sumOfCubes0);
 
 //3.
 
+console.log(`
+3. String Check.
+`);
+
 const dictionary = (string1, string2) => {
     let result = string2.startsWith(string1) ? true : false;
     return result;
@@ -59,3 +70,43 @@ console.log(result2);
 
 const result3 = dictionary("beau", "pastry");
 console.log(result3);
+
+//4.
+console.log(`
+4. Less Than or Equal to Zero?
+`);
+
+const lessThanOrEqualToZero = (num1) => {
+    let result = num1 <= 0 ? true : false;
+    return result;
+}
+
+const lessThanOrEqualToZero3 = lessThanOrEqualToZero(3);
+console.log(lessThanOrEqualToZero3);
+
+const lessThanOrEqualToZero0 = lessThanOrEqualToZero(0);
+console.log(lessThanOrEqualToZero0);
+
+const lessThanOrEqualToZeroMinus4 = lessThanOrEqualToZero(-4);
+console.log(lessThanOrEqualToZeroMinus4);
+
+const lessThanOrEqualToZero10 = lessThanOrEqualToZero(10);
+console.log(lessThanOrEqualToZero3);
+
+//5.
+
+console.log(`
+5. Count Occurrences. 
+`);
+
+const countOccurrences = (string, letter) => {
+ let letterCount = 0;
+ for (let position = 0; position < string.length; position++) {
+    if (string[position] === letter) {
+      letterCount += 1;
+      }
+  }
+  return letterCount;
+}
+
+console.log(countOccurrences('this is a string', 'i'));
