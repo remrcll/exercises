@@ -20,7 +20,7 @@ exponential(2, 8);
 
 let myFavourite = 'banana';
 
-const printFavoriteFruit = (x) => {
+const printFavoriteFruit = myFavourite => {
     myFavourite = "My favorite fruit is: Orange";
     console.log(myFavourite);
 }
