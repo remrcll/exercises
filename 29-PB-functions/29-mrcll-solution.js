@@ -1,5 +1,7 @@
 'use strict';
 
+let result;
+
 //1. 
 
 console.log(`
@@ -26,10 +28,9 @@ console.log(addUp600);
 console.log(`
 2. Cubed. 
 `);
-
-let cube = 3;
-
 const cubeSums = (num1 = 0, num2 = 0, num3 = 0) => {
+    
+    let cube = 3;
 
     if (isNaN(num1) === false && isNaN(num2) === false && isNaN(num3) === false) {
         let cubeNum1 = num1 ** cube;
@@ -39,7 +40,6 @@ const cubeSums = (num1 = 0, num2 = 0, num3 = 0) => {
     } else {
         console.log("fuck");
     }
-
 }
 
 const sumOfCubes159 = cubeSums(1, 5, 9);
@@ -57,10 +57,7 @@ console.log(`
 3. String Check.
 `);
 
-const dictionary = (string1, string2) => {
-    let result = string2.startsWith(string1) ? true : false;
-    return result;
-}
+const dictionary = (string1, string2) => result = string2.startsWith(string1) ? true : false;
 
 const result1 = dictionary("bu", "button");
 console.log(result1);
@@ -76,10 +73,8 @@ console.log(`
 4. Less Than or Equal to Zero?
 `);
 
-const lessThanOrEqualToZero = (num1) => {
-    let result = num1 <= 0 ? true : false;
-    return result;
-}
+const lessThanOrEqualToZero = num1 => result = num1 <= 0 ? true : false;
+
 
 const lessThanOrEqualToZero3 = lessThanOrEqualToZero(3);
 console.log(lessThanOrEqualToZero3);
@@ -118,9 +113,8 @@ console.log(`
 6. X To The Power of X.
 `);
 
-const calculateBaseToExponent = (num, exp) => {
-    return num ** exp;
-}
+const calculateBaseToExponent = (num, exp) => num ** exp;
+
 
 const calculateBaseToExponentResult1 = calculateBaseToExponent(5, 5);
 console.log(calculateBaseToExponentResult1);
@@ -137,7 +131,7 @@ console.log(`
 7. Dog Years. 
 `);
 
-const dogAge = (doggieYears) => {
+const dogAge = doggieYears => {
     let humanYears = 7;
     let result = doggieYears * humanYears;
     return `Your doggo is ${result} years old in human years!`
@@ -145,3 +139,48 @@ const dogAge = (doggieYears) => {
 
 const dogAgeResult = dogAge(4);
 console.log(dogAgeResult);
+
+//8.
+
+console.log(`
+8. A Lifetime Supply...
+
+Actually the examples are wrong, because it is not counting with the leap years,
+so I will also count every year with 365 days.
+`);
+
+let death = 80;
+let yearInDays = 365;
+const calcSupply = (age, amountPerDay) => Math.round((death - age) * (amountPerDay * yearInDays));
+
+
+const calcSupplyResult1 = calcSupply(25, 2);
+console.log(calcSupplyResult1);
+
+const calcSupplyResult2 = calcSupply(40, 3);
+console.log(calcSupplyResult2);
+
+const calcSupplyResult3 = calcSupply(40.7, 3.5);
+console.log(calcSupplyResult3);
+
+//9.
+
+console.log(`
+9. Where's Waldo? Create a function that takes a string and returns true if Waldo is found, and false if he's not.
+`);
+
+const isWaldoHere = string => result = string.toLowerCase().includes("waldo") ? true : false;
+
+
+const isWaldoHereResult1 = isWaldoHere('is there wal here ?');
+console.log(isWaldoHereResult1);
+
+const isWaldoHereResult2 = isWaldoHere('I found you Waldo!');
+console.log(isWaldoHereResult2);
+
+const isWaldoHereResult3 = isWaldoHere('is wally here?');
+console.log(isWaldoHereResult3);
+
+const isWaldoHereResult4 = isWaldoHere('waldo is here');
+console.log(isWaldoHereResult4);
+
