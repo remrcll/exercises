@@ -38,7 +38,7 @@ const cubeSums = (num1 = 0, num2 = 0, num3 = 0) => {
         let cubeNum3 = num3 ** cube;
         return cubeNum1 + cubeNum2 + cubeNum3;
     } else {
-        console.log("fuck");
+        console.log("Something");
     }
 }
 
