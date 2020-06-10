@@ -234,7 +234,9 @@ console.log(`
 11. XO Create a function that takes a string, checks if it has the same number of 'x's and 'o's and returns either true or false.
 `);
 
-const countOccurrencesXO = (string, letter1, letter2) => {
+const countOccurrencesXO = (string) => {
+    let letter1 = 'o';
+    let letter2 = 'x';
     let toLowerCase = string.toLowerCase()
     let letterCount1 = 0;
     for (let position = 0; position < toLowerCase.length; position++) {
@@ -259,19 +261,19 @@ const countOccurrencesXO = (string, letter1, letter2) => {
     }
 }
 
-const XOcountOccurrencesResult1 = countOccurrencesXO('ooxx', 'o', 'x')
+const XOcountOccurrencesResult1 = countOccurrencesXO('ooxx')
 console.log(XOcountOccurrencesResult1);
 
-const XOcountOccurrencesResult2 = countOccurrencesXO('xooxx', 'o', 'x')
+const XOcountOccurrencesResult2 = countOccurrencesXO('xooxx')
 console.log(XOcountOccurrencesResult2);
 
-const XOcountOccurrencesResult3 = countOccurrencesXO('ooxXm', 'o', 'x')
+const XOcountOccurrencesResult3 = countOccurrencesXO('ooxXm')
 console.log(XOcountOccurrencesResult3);
 
-const XOcountOccurrencesResult4 = countOccurrencesXO('zpzpzpp', 'o', 'x')
+const XOcountOccurrencesResult4 = countOccurrencesXO('zpzpzpp')
 console.log(XOcountOccurrencesResult4);
 
-const XOcountOccurrencesResult5 = countOccurrencesXO('zzoo', 'o', 'x')
+const XOcountOccurrencesResult5 = countOccurrencesXO('zzoo')
 console.log(XOcountOccurrencesResult5);
 
 //12.
