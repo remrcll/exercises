@@ -237,24 +237,22 @@ console.log(`
 const countOccurrencesXO = (string) => {
     let letter1 = 'o';
     let letter2 = 'x';
-    let toLowerCase = string.toLowerCase()
+    let toLowerCase = string.toLowerCase();
     let letterCount1 = 0;
+    let letterCount2 = 0;
     for (let position = 0; position < toLowerCase.length; position++) {
         if (toLowerCase[position] === letter1) {
             letterCount1 += 1;
         }
     }
 
-    let letterCount2 = 0;
     for (let position = 0; position < toLowerCase.length; position++) {
         if (toLowerCase[position] === letter2) {
             letterCount2 += 1;
         }
     }
 
-    if (letterCount1 === 0 && letterCount2 === 0) {
-        return true;
-    } else if (letterCount1 === letterCount2) {
+    if (letterCount1 === letterCount2) {
         return true;
     } else {
         return false;
