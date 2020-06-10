@@ -187,24 +187,44 @@ console.log(isWaldoHereResult4);
 //10.
 
 console.log(`
-10. Pie.
+10.a Pie. 
 
-I think the second example is wrong, but maybe I'm wrong...
+I think the second example is wrong, because this way we are not spliting the whole pie. Or we have to throw away 2 slices. So my firs solution is:
 `);
 
-const equalSlices = (noOfSlices, noOfRecipients, amountToGet) => (noOfRecipients * amountToGet) === noOfSlices ? true : false;
+const equalSlicesA = (noOfSlices, noOfRecipients, amountToGet) => (noOfRecipients * amountToGet) === noOfSlices ? true : false;
 
-const equalSlicesResult1 = equalSlices(11, 5, 3);
+const equalSlicesResult1 = equalSlicesA(11, 5, 3);
 console.log(equalSlicesResult1);
 
-const equalSlicesResult2 = equalSlices(8, 3, 2);
+const equalSlicesResult2 = equalSlicesA(8, 3, 2);
 console.log(equalSlicesResult2);
 
-const equalSlicesResult3 = equalSlices(8, 3, 3);
+const equalSlicesResult3 = equalSlicesA(8, 3, 3);
 console.log(equalSlicesResult3);
 
-const equalSlicesResult4 = equalSlices(24, 12, 2);
+const equalSlicesResult4 = equalSlicesA(24, 12, 2);
 console.log(equalSlicesResult4);
+
+console.log(`
+10.b Pie. 
+
+If I want to stick to the example then the solution is: 
+`);
+
+const equalSlicesB = (noOfSlices, noOfRecipients, amountToGet) => (noOfRecipients * amountToGet) <= noOfSlices ? true : false;
+
+const equalSlicesResultB1 = equalSlicesB(11, 5, 3);
+console.log(equalSlicesResultB1);
+
+const equalSlicesResultB2 = equalSlicesB(8, 3, 2);
+console.log(equalSlicesResultB2);
+
+const equalSlicesResultB3 = equalSlicesB(8, 3, 3);
+console.log(equalSlicesResultB3);
+
+const equalSlicesResultB4 = equalSlicesB(24, 12, 2);
+console.log(equalSlicesResultB4);
 
 //11.
 
@@ -251,3 +271,78 @@ console.log(XOcountOccurrencesResult4);
 
 const XOcountOccurrencesResult5 = countOccurrencesXO('zzoo', 'o', 'x')
 console.log(XOcountOccurrencesResult5);
+
+//12.
+
+console.log(`
+12. isPrime?
+`);
+
+const isPrime = number => {
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false;
+        }
+    }
+    return number > 1;
+}
+
+const primeResult1 = isPrime(7);
+console.log(primeResult1);
+
+const primeResult2 = isPrime(9);
+console.log(primeResult2);
+
+const primeResult3 = isPrime(10);
+console.log(primeResult3);
+
+//13.
+
+console.log(`
+13. Validate Email.
+`);
+
+const validate = address => {
+    let atPosition;
+    let dotPosition;
+    if (address[0] !== '@') {
+        for (let i = 0; i < address.length; i++) {
+            if (address[i] === "@") {
+                atPosition = i;
+            }
+        }
+        for (let i = atPosition; i < address.length; i++) {
+            if (address[i] === ".") {
+                dotPosition = i;
+            }
+        }
+        if (atPosition < dotPosition) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
+
+const emailResult1 = validate("john@example.com");
+console.log(emailResult1);
+
+const emailResult2 = validate("@example.com");
+console.log(emailResult2);
+
+const emailResult3 = validate("john.smith@com");
+console.log(emailResult3);
+
+const emailResult4 = validate("john.smith@email.com");
+console.log(emailResult4);
+
+const emailResult5 = validate("johnsmithemail.com");
+console.log(emailResult5);
+
+const emailResult6 = validate("johnsmith@emailcom");
+console.log(emailResult6);
+
+const emailResult7 = validate("johnsmithemailcom");
+console.log(emailResult7);
