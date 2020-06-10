@@ -145,14 +145,16 @@ console.log(dogAgeResult);
 console.log(`
 8. A Lifetime Supply...
 
-Actually the examples are wrong, because it is not counting with the leap years,
-so I will also count every year with 365 days.
 `);
 
-let death = 80;
-let yearInDays = 365;
-const calcSupply = (age, amountPerDay) => Math.round((death - age) * (amountPerDay * yearInDays));
 
+const calcSupply = (age, amountPerDay) => {
+    let death = 80;
+    let yearInDays = 365;
+    result = Math.round((death - age) * (amountPerDay * yearInDays));
+    return `You will need ${result} bars of chocolate (2 a day) to last you til the age of 80.`;
+
+}
 
 const calcSupplyResult1 = calcSupply(25, 2);
 console.log(calcSupplyResult1);
