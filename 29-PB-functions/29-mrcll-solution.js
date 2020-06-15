@@ -348,3 +348,17 @@ console.log(emailResult6);
 
 const emailResult7 = validate("johnsmithemailcom");
 console.log(emailResult7);
+
+const multiplesOfThree = () => {
+    const count = 5;
+    let result;
+    let finalResult = '';
+    for (let i = 1; i <= count; i++) {
+        result = i * 3;
+        finalResult += result + " ";
+    }
+    return finalResult;
+}
+
+const multiplesOfThreeResult = multiplesOfThree();
+console.log(multiplesOfThreeResult);
