@@ -14,3 +14,4 @@ const exponent = (num, exp = 2) => {
 
 console.log(exponent(3, 3)); // -> 27
 console.log(exponent(3)); // -> 9
+console.log(exponent(2)); // -> 4
