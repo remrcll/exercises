@@ -32,3 +32,9 @@ console.log(result);
     }
 
 })(40, 65, 2000);
+
+const multiplier3 = (factor) => {
+    return number => number * factor;
+}
+const twoTimes = multiplier3(3);
+console.log(twoTimes(7));
