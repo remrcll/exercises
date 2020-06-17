@@ -54,6 +54,7 @@ console.log(worldCities);
 //10. Reverse the order of worldCities.
 
 worldCities.reverse();
+console.log(worldCities);
 
 // 11 .Bonus: Replace the 3rd item in the array of worldCities with "Toronto".
 
@@ -68,3 +69,6 @@ console.log(worldCities);
 
 // 13. Bonus Write a program to join all elements of the result (worldCities) into a string. Example: worldCities = ["Berlin", "London", "Bangkok", "Phnom Penh"]; Expected Outputs: "Berlin , London, Bangkok, Phnom Penh" "Berlin+London+Bangkok+Phnom Penh"
 
+
+let newWorldCities = worldCities.toString();
+console.log(newWorldCities);
