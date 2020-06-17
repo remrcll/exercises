@@ -33,13 +33,18 @@ console.log(euroCities);
 
 //7. Create another variable named asianCities and assign an array of at least 5 cities to the variable.
 const asianCities = ["Taipei", "Tbilisi", "Bangkok", "Kathmandu", "Socotra"];
+console.log(asianCities);
 
 //8. Bonus: Use an array method to select items 2-4 from the array of asianCities and store this in another variable.
 
 let newAsian = asianCities[1]+ ", " + asianCities[2] + ", " + asianCities[3];
 console.log(newAsian);
 
-let newAsian2 = asianCities.slice(1) + asianCities.slice(5);
+// or 
+
+let newAsian2 = asianCities.slice(1, 4);
+console.log(newAsian2);
+
 
 //9. Bonus: Use a method to concat euroCities with asianCities. Store the result in a variable (eg. worldCities).
 
