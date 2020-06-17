@@ -1,3 +1,5 @@
+'use strict'
+
 //2 .Write a program that will output, "There is one bottle of beer on the wall." "There are two bottles of beer on the wall" up until there are five bottles. 
 
 

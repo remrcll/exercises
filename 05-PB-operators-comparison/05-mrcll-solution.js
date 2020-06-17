@@ -1,3 +1,5 @@
+'use strict'
+
 // 0. Declare two variables "x" and "y". Assign a value of 20 to x. Assign a value of 30 to y.
 
 let x = 20;

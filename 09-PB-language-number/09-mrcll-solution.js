@@ -1,3 +1,5 @@
+'use strict'
+
 // 1. Concatenation.
 
 let introSentence = "hello, my name is Fran and I am";

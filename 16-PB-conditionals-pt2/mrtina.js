@@ -1,3 +1,5 @@
+'use strict'
+
 let markMass = 72.5;
 let markHeight = 1.65;
 let johnMass = 95;

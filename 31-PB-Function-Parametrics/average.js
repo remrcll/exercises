@@ -1,3 +1,5 @@
+'use strict'
+
 // Bonus: Create a function average which accepts any amount of numbers and returns their mean average.
 
 // The mean average of a set of numbers is calculated by adding them all up and dividing the result of the addition by the amount of numbers in the set

@@ -1,3 +1,5 @@
+'use strict'
+
 // Create a function sum which accepts any amount of numbers and return the sum of their addition
 
 const sum = (...args) => {

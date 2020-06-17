@@ -1,3 +1,5 @@
+'use strict'
+
 //Q.1 In one night, a movie theater sells tickets for 6450 dollars. Each ticket costs 15 dollars. How many tickets were sold?
 let ticketPrice = 15;
 let ticketIncome = 6450;
