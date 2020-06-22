@@ -73,14 +73,11 @@ console.log(missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]));
 
 // 6. Cubed. Create a function that takes in an array of numbers and returns the sum of its cubes.
 
-
-
 const sumOfCubes = arr => {
     let result = 0;
     for (let i = 0; i < arr.length; i++) {
         result += arr[i] ** 3;
     }
-
     return result;
 }
 
@@ -90,19 +87,19 @@ console.log(sumOfCubes([]));
 
 //7. Dictionary. Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
 
-// const dictionary = (str, arr) => {
-//     let result = '';
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i].startsWith(str)) {
-//             result.push(i);
-//         }
-//     }
-//     return result;
-// }
+const dictionary = (str, arr) => {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].startsWith(str)) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
 
-// console.log(dictionary("bu", ["button", "breakfast", "border"])); // ["button"]
-// console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"])); // ["triplet", "tries", trip"]
-// console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"])); // []
+console.log(dictionary("bu", ["button", "breakfast", "border"])); // ["button"]
+console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"])); // ["triplet", "tries", trip"]
+console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"])); // []
 
 //8. Even Number Generator. Create a function that finds all even numbers from 1 to the given number.
 
