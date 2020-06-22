@@ -116,3 +116,14 @@ const evenNums = num => {
 console.log(evenNums(8)); // [2, 4, 6, 8]
 console.log(evenNums(4)); // [2, 4]
 console.log(evenNums(2));
+
+//9.
+
+const alphaOrder = string => {
+    // const splitString = string.split("");
+    // const sortString = splitString.sort();
+    // const joinString = sortString.join("");
+    return string.split("").sort().join("");
+}
+
+console.log(alphaOrder("webdev"));
