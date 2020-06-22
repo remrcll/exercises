@@ -105,7 +105,7 @@ console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"])); // [
 
 const evenNums = num => {
     let result = [];
-    for (let i = 1; i <= num; i++) {
+    for (let i = 2; i <= num; i++) {
         if (i % 2 === 0) {
             result.push(i);
         }
