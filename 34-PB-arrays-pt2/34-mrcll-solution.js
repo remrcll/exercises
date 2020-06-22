@@ -19,18 +19,18 @@ console.log(findGreatest([0, 10, 3], 4));
 
 // //2. For the longest word. Create a function to find the longest word in a given string.
 
-// function findLongestWord(str) {
-//     var strSplit = str.split(' ');
-//     var longestWord = 0;
-//     for(var i = 0; i < strSplit.length; i++){
-//       if(strSplit[i].length > longestWord){
-//       longestWord = strSplit[i].length;
-//        }
-//     }
-//     return longestWord;
-//   }
+function findLongestWord(str) {
+    let strSplit = str.split(' ');
+    let longestWord = '';
+    for (let i = 0; i < strSplit.length; i++) {
+        if (strSplit[i].length > longestWord.length) {
+            longestWord = strSplit[i];
+        }
+    }
+    return longestWord;
+}
 
-//   console.log(findLongestWord("this is a web development course"));
+console.log(findLongestWord("this is a web development course"));
 
 //3. Reverse. Create a function to reverse a number.
 // i.e. reverse(34532) ➞ 23543
@@ -40,11 +40,11 @@ console.log(myArray.reverse());
 
 // or 
 
-function reverse_a_number(n) {
+function reverseANumber(n) {
     n = n + "";
-    return n.split("").reverse().join("");
+    return parseInt(n.split("").reverse().join(""));
 }
-console.log(reverse_a_number(34532));
+console.log(reverseANumber(34532));
 
 //4. AEIOU: Vowels. Create a function that takes a string in its parameters and counts the number of vowels (i.e. in English, "a, e, i, o, u") in the string.
 
@@ -90,19 +90,19 @@ console.log(sumOfCubes([]));
 
 //7. Dictionary. Create a function that takes an initial string and an array of words, and returns a filtered array of the words that start with the same letters as the initial string.
 
-const dictionary = (str, arr) => {
-    let result = '';
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].startsWith(str)) {
-            result.push(i)];
-    }
-    return result;
-}
+// const dictionary = (str, arr) => {
+//     let result = '';
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].startsWith(str)) {
+//             result.push(i);
+//         }
+//     }
+//     return result;
+// }
 
-
-console.log(dictionary("bu", ["button", "breakfast", "border"])); // ["button"]
-console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"])); // ["triplet", "tries", trip"]
-console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"])); // []
+// console.log(dictionary("bu", ["button", "breakfast", "border"])); // ["button"]
+// console.log(dictionary("tri", ["triplet", "tries", "trip", "piano", "tree"])); // ["triplet", "tries", trip"]
+// console.log(dictionary("beau", ["pastry", "delicious", "name", "boring"])); // []
 
 //8. Even Number Generator. Create a function that finds all even numbers from 1 to the given number.
 
@@ -111,15 +111,11 @@ const evenNums = num => {
     for (let i = 1; i <= num; i++) {
         if (i % 2 === 0) {
             result.push(i);
-
         }
-
     }
     return result;
 }
 
-
-
 console.log(evenNums(8)); // [2, 4, 6, 8]
-console.log(evenNums(4)) // [2, 4]
-console.log(evenNums(2)) //[2]
+console.log(evenNums(4)); // [2, 4]
+console.log(evenNums(2));
