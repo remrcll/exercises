@@ -4,10 +4,13 @@
 
 const sumOfNumbers = arr => {
     let sum = 0;
+    let product = 1;
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
+        product *= arr[i];
     }
-    return sum;
+    return `Sum = ${sum}, Product = ${product}.`;
+    
 }
 
 console.log(sumOfNumbers([2, 4, 6, 9, 55]));
