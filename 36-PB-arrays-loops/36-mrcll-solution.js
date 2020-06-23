@@ -43,22 +43,22 @@ console.log(cityNames(['City1', 'City2', 'City3', 'City4', 'City5']));
 
 //4. Odds and Evens. Create a program that changes a given array by adding 1 to each odd integer and subtracting 1 from each even integer.
 
-// NOT DONE YET
 
-// const oddsEvens = arr => {
+const oddsEvens = arr => {
 
-//     let result = []; 
-//     for (let i = 0; i < arr.length; i++) {
-//         if (i % 2 === 0) {
-//             result += result.push(i);
-//             result -= 1;
-//         }
-//     }
-//     return result;
-// }
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            result.push(arr[i] - 1);
+        } else if (arr[i] % 2 !== 0) {
+            result.push(arr[i] + 1);
+        }
+    }
+    return result;
+}
 
-// console.log(oddsEvens([3, 5, 2, 4])); // ➞ expected output: [4, 6, 1, 3]
-// console.log(oddsEvens([6, 9, 10, 20])); // ➞ expected output: [5, 10, 9, 19]
+console.log(oddsEvens([3, 5, 2, 4])); // ➞ expected output: [4, 6, 1, 3]
+console.log(oddsEvens([6, 9, 10, 20])); // ➞ expected output: [5, 10, 9, 19]
 
 //5. Capitalize. Create a program that capitalises the first letter of each element in an array of names. 
 
