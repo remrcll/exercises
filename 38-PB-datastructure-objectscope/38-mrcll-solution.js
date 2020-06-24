@@ -7,7 +7,7 @@ const student = {
     firstName: "John",
     lastName: "Smith",
     class: 12,
-    whoIsJohnSmith: function () { /// METHOD  ==> FUNCTION INSIDE OF AN OBJECT 
+    whoIsJohnSmith: function () {
         return `${this.firstName} ${this.lastName} is a student in class ${this.class}.`;
     }
 };
@@ -25,7 +25,7 @@ const person = {
     age: 41,
     profession: "engineer",
     from: "France",
-    whoIsThisPerson: function () { 
+    whoIsThisPerson: function () {
         return `${this.firstName} ${this.lastName} is a ${this.age} year old ${this.profession} living in ${this.from}.`;
     }
 };
