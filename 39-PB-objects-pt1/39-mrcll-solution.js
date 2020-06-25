@@ -53,3 +53,25 @@ const person2 = {
 
 const callWhoIsThisPerson = person2.whoIsThisPerson.bind(person2);
 console.log(callWhoIsThisPerson());
+
+//Bonus questions
+
+console.log(`
+Bonus 1. Convert keys and values into an array. Create a function that converts an object into an array of keys and values.
+`)
+
+const objectToArray = {
+    A: 1,
+    B: 2,
+    C: 3
+}
+
+// const newArray = [];
+// for (let i = 0; i < objectToArray.length; i++) { // 
+//     newObject["weekDay" + i] = newArray[i];
+// }
+const bonus1 = obj => {
+   return Object.entries(obj);
+}
+
+console.log(bonus1(objectToArray));
