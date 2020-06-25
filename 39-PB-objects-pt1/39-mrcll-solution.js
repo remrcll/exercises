@@ -143,3 +143,18 @@ const swap = obj => {
 };
 
 console.log(swap(person3));
+
+//Bonus 5.
+console.log(`
+Bonus 5. Return Keys and Values. Write a program that takes an object and returns an array which contains two arrays: one for the keys of the object and the other for the values of the object.
+`)
+
+const bonus5 = obj => {
+    let resultArray = [];
+
+    resultArray.push(Object.keys(obj), Object.values(obj));
+
+    return resultArray;
+}
+
+console.log(bonus5(objectToArray1));
