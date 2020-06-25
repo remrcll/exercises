@@ -60,18 +60,47 @@ console.log(`
 Bonus 1. Convert keys and values into an array. Create a function that converts an object into an array of keys and values.
 `)
 
-const objectToArray = {
+const objectToArray1 = {
     A: 1,
     B: 2,
     C: 3
 }
+
+const objectToArray2 = {
+    cats: 1,
+    dogs: 2,
+    turtles: 4
+}
+
 
 // const newArray = [];
 // for (let i = 0; i < objectToArray.length; i++) { // 
 //     newObject["weekDay" + i] = newArray[i];
 // }
 const bonus1 = obj => {
-   return Object.entries(obj);
+    return Object.entries(obj);
 }
 
-console.log(bonus1(objectToArray));
+console.log(bonus1(objectToArray1));
+console.log(bonus1(objectToArray2));
+
+//Bonus 2.
+console.log(`
+Bonus 2. List Properties. Create a function that returns an array of properties of a javascript object.
+`)
+
+const student = {
+    name: "Mike",
+    class: "4A",
+    course: "English"
+}
+
+const bonus2 = obj => {
+    let properties = [];
+    for (const element in student) { 
+        properties.push(element);
+    }
+    return properties;
+}
+
+console.log(bonus2(student));
