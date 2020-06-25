@@ -63,3 +63,14 @@ const addScore = arr => {
 }
 
 console.log(addScore(scrabbleArray));
+
+//3.
+
+console.log(`
+3. Is it an empty object? Write a program that returns true if an object is empty, and false if otherwise.
+`);
+
+const emptyOrNot = obj => Object.entries(obj).length === 0 ? true : false;
+
+console.log(emptyOrNot({}));// ➞ true
+console.log(emptyOrNot({a: 1}));// ➞ false
