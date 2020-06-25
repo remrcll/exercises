@@ -104,3 +104,19 @@ const bonus2 = obj => {
 }
 
 console.log(bonus2(student));
+
+//Bonus 3.
+console.log(`
+Bonus 3. Merge. Create a function that takes two objects as its parameters and merges them together into a new object.
+`)
+
+const first = {firstName: "John"}
+const last = {lastName: "Smith"}
+
+const merge = (obj1, obj2) => {
+    let mergedObject = {};
+    mergedObject = Object.assign({},obj1,obj2);
+    return mergedObject;
+}
+
+console.log(merge(first, last));
