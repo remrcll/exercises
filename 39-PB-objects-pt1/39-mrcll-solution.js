@@ -72,11 +72,6 @@ const objectToArray2 = {
     turtles: 4
 }
 
-
-// const newArray = [];
-// for (let i = 0; i < objectToArray.length; i++) { // 
-//     newObject["weekDay" + i] = newArray[i];
-// }
 const bonus1 = obj => {
     return Object.entries(obj);
 }
@@ -97,7 +92,7 @@ const student = {
 
 const bonus2 = obj => {
     let properties = [];
-    for (const element in student) { 
+    for (const element in student) {
         properties.push(element);
     }
     return properties;
@@ -110,13 +105,41 @@ console.log(`
 Bonus 3. Merge. Create a function that takes two objects as its parameters and merges them together into a new object.
 `)
 
-const first = {firstName: "John"}
-const last = {lastName: "Smith"}
+const first = {
+    firstName: "John"
+}
+const last = {
+    lastName: "Smith"
+}
 
 const merge = (obj1, obj2) => {
     let mergedObject = {};
-    mergedObject = Object.assign({},obj1,obj2);
+    mergedObject = Object.assign({}, obj1, obj2);
     return mergedObject;
 }
 
 console.log(merge(first, last));
+
+//Bonus 4.
+console.log(`
+4. Switch Keys and Values. Create a function to get a copy of an object. The copy must switch the keys and values.
+`)
+
+const person3 = {
+    name: "John",
+    job: "teacher"
+}
+
+const swap = obj => {
+    let newObject = {};
+
+    for (let prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            newObject[obj[prop]] = prop;
+        }
+    }
+
+    return newObject;
+};
+
+console.log(swap(person3));
