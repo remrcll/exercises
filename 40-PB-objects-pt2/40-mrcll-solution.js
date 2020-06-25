@@ -56,7 +56,7 @@ const scrabbleArray = [{
 
 let result = 0;
 const addScore = arr => {
-    for (let i = 0; i < arr.length; i++) { 
+    for (let i = 0; i < arr.length; i++) {
         result += scrabbleArray[i].score;
     }
     return `The player's maximum score: ${result}`;
@@ -72,5 +72,57 @@ console.log(`
 
 const emptyOrNot = obj => Object.entries(obj).length === 0 ? true : false;
 
-console.log(emptyOrNot({}));// ➞ true
-console.log(emptyOrNot({a: 1}));// ➞ false
+console.log(emptyOrNot({})); // ➞ true
+console.log(emptyOrNot({
+    a: 1
+})); // ➞ false
+
+//4.
+
+console.log(`
+4. Counting Letters. Create a function that counts the number of occurrences of each letter in a string. Return an object with key pair values of letters and the number of occurrences for each letter.
+`);
+
+const countLetters = str => {
+    let result = {};
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        count = str.split(str[i]).length - 1;
+        result[str[i]] = count;
+    }
+    return result;
+};
+
+console.log(countLetters("tree")); // ➞ {t: 1, r: 1, e: 2}
+
+//5.
+
+console.log(`
+5. Free Shipping. Create a function that determines whether an online order should get free shipping. An order gets free shipping if the total cost of items exceeds €50.
+`);
+
+const freeShipping = obj => {
+    let arr = Object.values(obj);
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum >= 50 ? true : false;
+};
+
+console.log(freeShipping({
+    "Sponge": 3.50,
+    "Soap": 5.99
+}));
+
+console.log(freeShipping({
+    "Surround Sound Equipment": 499.99
+}));
+
+console.log(freeShipping({
+    "Wool": 13.99,
+    "Knitting Needles": 15.50,
+    "Bag": 13.99
+}));
+
