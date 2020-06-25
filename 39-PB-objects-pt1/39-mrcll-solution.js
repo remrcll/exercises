@@ -79,6 +79,26 @@ const bonus1 = obj => {
 console.log(bonus1(objectToArray1));
 console.log(bonus1(objectToArray2));
 
+//Bonus Mohamed version 1
+
+function convertToArray(obj) {
+    const result = [];
+    //for (let i = 0; i < Object.length; i++ ){
+    for (const item in obj) {
+        let newArr = [];
+        newArr.push(item);
+        newArr.push(obj[item]);
+        result.push(newArr);
+    }
+    return result;
+}
+const objectToArray = {
+    A: 1,
+    B: 2,
+    C: 3
+}
+console.log(convertToArray(objectToArray));
+
 //Bonus 2.
 console.log(`
 Bonus 2. List Properties. Create a function that returns an array of properties of a javascript object.
