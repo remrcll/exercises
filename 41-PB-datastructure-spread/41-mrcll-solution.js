@@ -75,4 +75,3 @@ console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
 console.log(isWhole(1, 1, 1, 1));
 console.log(isWhole([9, 2, 2, 5]));
-
