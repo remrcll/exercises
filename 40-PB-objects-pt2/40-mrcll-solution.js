@@ -6,7 +6,7 @@ console.log(`
 1. Check if a number is within a given range. Write a program that checks if a number is within the range of an object's min and max properties. Assume min <= max is always true.
 `);
 
-const check = (num, obj) => obj["min"] <= num && obj["max"] >= num ? true : false;
+const check = (num, obj) => obj.min <= num && obj.max >= num;
 
 console.log(check(4, {
     min: 0,
@@ -70,7 +70,7 @@ console.log(`
 3. Is it an empty object? Write a program that returns true if an object is empty, and false if otherwise.
 `);
 
-const emptyOrNot = obj => Object.entries(obj).length === 0 ? true : false;
+const emptyOrNot = obj => Object.entries(obj).length === 0;
 
 console.log(emptyOrNot({})); // ➞ true
 console.log(emptyOrNot({
@@ -108,7 +108,7 @@ const freeShipping = obj => {
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
-    return sum >= 50 ? true : false;
+    return sum > 50 ? true : false;
 };
 
 console.log(freeShipping({
@@ -126,3 +126,43 @@ console.log(freeShipping({
     "Bag": 13.99
 }));
 
+//6.
+
+console.log(`
+6. Programming Object.
+`);
+
+const programming = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke"
+};
+
+programming.languages[3] = "Go";
+programming.difficulty = 7;
+delete programming.jokes;
+programming.isFun = true;
+
+console.log(programming);
+
+for (let i = 0; i < programming.languages.length; i++) {
+    console.log(programming.languages[i]);
+}
+
+for (const keys in programming) {
+    console.log(keys);
+}
+
+
+for (let each in programming) {
+    console.log(programming[each]);
+}
+
+programming.isReCh = function () {
+    if (this.isRewarding === true && this.isChallenging === true) {
+        return `Learning the programming languages: ${programming.languages.join(", ")} is rewarding and challenging.`;
+    }
+}
+console.log(programming.isReCh());
