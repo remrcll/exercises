@@ -68,8 +68,11 @@ console.log(employee);
 
 const isWhole = (num1, num2, num3, num4) => {
     let average = (num1 + num2 + num3 + num4) / 4;
-    return average === average.isInteger;
+    return Number.isInteger(average);
 }
 
 console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
+console.log(isWhole(1, 1, 1, 1));
+console.log(isWhole([9, 2, 2, 5]));
+
