@@ -3,6 +3,10 @@
 let euroCountries = ["country1", "country2", "country3"];
 let asianCountries = ["country4", "country5", "country6"];
 
+for (const item of asianCountries) {
+    euroCountries.push(item + "test");
+}
+
 let combinedCountries1 = euroCountries + asianCountries; //we get a string
 let combinedCountries2 = [...euroCountries, ...asianCountries]; //we get an array //unpack
 let combinedCountries3 = [].concat(euroCountries, asianCountries); //also get an array //concat
@@ -47,7 +51,7 @@ const job = {
 
 //5.1 Clone the person object.
 
-const clonePerson = person;
+const clonePerson = {...person};
 
 //5.2 Merge these two objects into one object: "employee". Use the spread operator to do so.
 
@@ -74,4 +78,4 @@ const isWhole = (num1, num2, num3, num4) => {
 console.log(isWhole(1, 2, 3, 4));
 console.log(isWhole(9, 2, 2, 5));
 console.log(isWhole(1, 1, 1, 1));
-console.log(isWhole([9, 2, 2, 5]));
+console.log(isWhole(...[1, 1, 1, 1])); //not working with arrays :), just if you unpack with ... !
