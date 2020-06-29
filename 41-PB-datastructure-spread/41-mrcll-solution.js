@@ -63,3 +63,13 @@ employee.name = 'Jim';
 employee.role = 'Driver';
 
 console.log(employee);
+
+//Bonus: 6. Is the average a whole number?
+
+const isWhole = (num1, num2, num3, num4) => {
+    let average = (num1 + num2 + num3 + num4) / 4;
+    return average === average.isInteger;
+}
+
+console.log(isWhole(1, 2, 3, 4));
+console.log(isWhole(9, 2, 2, 5));
