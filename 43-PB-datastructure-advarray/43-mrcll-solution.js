@@ -46,8 +46,9 @@ const newArray = arrayOfNumbers.map((value) => {
 console.log(newArray);
 
 // 3. Filter Evens
+"::cow::"
 
-const filterEvens = value => value.filter(value => value % 2 === 0);
+const filterEvens = arr => arr.filter(value => value % 2 === 0);
 
 console.log(filterEvens([1, 2, 3, 11, 12, 13]));
 console.log(filterEvens([22, 2, 31, 110, 6, 13]));
