@@ -44,5 +44,3 @@ function destructureFunction2([name, song, genre, country]) {
 console.log(destructureFunction2([musicians.band1[0], musicians.band1[1], musicians.band1[2], musicians.band1[3]]));
 
 console.log(destructureFunction2([musicians.band2[0], musicians.band2[1], musicians.band2[2], musicians.band2[3]]));
-
-
