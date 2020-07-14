@@ -13,15 +13,18 @@
     margin-top: 1rem;
   }
   
+  footer {
+    text-align: right;
+    background-color: darkgray;
+    /* height: 3rem; */
+  }
   .status {
-    /* justify-items: flex-end; */
-    /* display: inline-block; */
     font-style: italic;
-    /* min-width: 100px; */
     padding: 10px;
     background-color: grey;
     border-radius: 6px;
-    text-align: center;
+    display: inline-block;
+    margin: 1rem;
   }
   
   .book-cover {
