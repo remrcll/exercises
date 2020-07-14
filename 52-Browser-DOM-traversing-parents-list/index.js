@@ -7,8 +7,8 @@ let currentTarget = cite
 let parentList = []
 
 while (currentTarget.parentElement) {
-    parentList.push(currentTarget.parentElement.nodeName + ' >')
+    parentList.push(currentTarget.parentElement.nodeName.toLowerCase())
     currentTarget = currentTarget.parentElement
 }
 
-console.log(...parentList.reverse())
+console.log(...parentList.reverse().join('>'))
