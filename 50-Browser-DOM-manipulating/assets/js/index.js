@@ -33,16 +33,18 @@ books.map(elem => {
   let h2 = document.createElement("h2")
   let image = document.createElement("img")
   let p1 = document.createElement("p")
-  let p2 = document.createElement("p")
+  let status = document.createElement("div")
+  card.classList.add("book")
+  image.classList.add("book-cover")
+  status.classList.add("status")
   h2.innerHTML = elem.title
   image.setAttribute("src", elem.img)
-  p1.innerHTML = elem.author
-  p2.innerHTML = elem.alreadyRead
-
-  /*  card.appendChild(h2)
-   card.appendChild(image)
-   card.appendChild(p) */
-  card.append(image, h2, p1, p2)
+  const splitString = elem.author.split(" ");
+  p1.innerHTML = splitString[1] + ', ' + splitString[0]
+  status.innerHTML = elem.alreadyRead
+  card.append(image, h2, p1, status)
   listContainer.appendChild(card)
   listContainer.style.display = "flex"
+  status.innerHTML = elem.alreadyRead ? 'read' : 'to read'
+  status.style.backgroundColor = elem.alreadyRead ? 'lightgreen' : 'lightgrey'
 })

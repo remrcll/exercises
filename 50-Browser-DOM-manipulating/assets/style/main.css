@@ -5,14 +5,27 @@
   }
   
   .book {
+    margin-top: 2rem;
     width: 12rem;
+  }
+
+  h2 {
+    margin-top: 1rem;
   }
   
   .status {
+    /* justify-items: flex-end; */
+    /* display: inline-block; */
     font-style: italic;
+    /* min-width: 100px; */
+    padding: 10px;
+    background-color: grey;
+    border-radius: 6px;
+    text-align: center;
   }
   
   .book-cover {
+    width: 100%;
     max-height: 15rem;
     object-fit: cover;
     border: 0.2rem solid black;
