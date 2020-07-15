@@ -2,7 +2,7 @@
 
 let container = document.querySelector(".container")
 let changeThis = document.querySelector(".change-this")
-let buttonToListen = document.querySelector("button")
+let buttonToListen = document.querySelector("form")
 let input = document.querySelector(".addme")
 let d = new Date();
 let dayInNumber = d.getDay();
@@ -20,15 +20,16 @@ let leftDays = 7 - dayInNumber;
 
 //event handler
 function handler(event) {
+    event.preventDefault();
     if (input.value === '') {
         changeThis.innerHTML = `You forgot to add your name!`;
     } else {
-        changeThis.innerHTML = `Hello ${input.value}! Today is ${n}. Only ${leftDays} days left until Weekend!`
-        input.value = ""
+        changeThis.innerHTML = `Hello ${input.value}! Today is ${n}. Only ${leftDays} days left until Weekend!`;
+        input.value = "";
     }
 
     /*  button.innerHTML="changed" */
-}
+};
 
 //attaching event listener on button
-buttonToListen.addEventListener("click", handler)
+buttonToListen.addEventListener("click", handler);
