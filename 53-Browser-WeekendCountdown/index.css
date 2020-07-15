@@ -1,0 +1,18 @@
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.addme {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.addme:focus {
+    border-color: rgb(255, 8, 255);
+}
+
+button {
+    padding: 5px;
+    border-radius: 3px;
+}
