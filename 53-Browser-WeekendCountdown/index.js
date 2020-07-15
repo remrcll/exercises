@@ -20,8 +20,13 @@ let leftDays = 7 - dayInNumber;
 
 //event handler
 function handler(event) {
-    changeThis.innerHTML = `Hello ${input.value}! Today is ${n}. Only ${leftDays} days left until Weekend!`
-    input.value = ""
+    if (input.value === '') {
+        changeThis.innerHTML = `You forgot to add your name!`;
+    } else {
+        changeThis.innerHTML = `Hello ${input.value}! Today is ${n}. Only ${leftDays} days left until Weekend!`
+        input.value = ""
+    }
+
     /*  button.innerHTML="changed" */
 }
 
