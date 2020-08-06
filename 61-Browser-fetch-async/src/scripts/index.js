@@ -2,23 +2,50 @@ import "../styles/main.scss";
 import "babel-polyfill"
 
 const modal = document.getElementById("myModal");
-let promiseOfModal = new Promise(function (resolve) {
-    window.setTimeout(function () {
-        resolve(modal)
-    }, (1000 * 60));
-});
+const modalClass = document.querySelector(".modal");
+const continueButton = document.getElementById("continue");
 
-promiseOfModal.then(function(val) {
-    console.log("User has been on the page for 60 seconds");
-    val.style.display = "block";
-})
+
+function resolveAfter6Seconds() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(modalClass.style.display = "block");
+        }, 6000);
+    });
+}
+
+function resolveAfter2MilliSeconds() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(alert("Continue to subscription!"));
+        }, 200);
+    });
+}
+
+let promiseOfModal = async () => {
+    let result = await resolveAfter6Seconds();
+};
+
+promiseOfModal();
+
+// promiseOfModal.then(function (val) {
+//     console.log("User has been on the page for 60 seconds");
+//     val.style.display = "block";
+// })
 
 modal.addEventListener("click", (e) => {
-    switch(e.target.className) {
+    switch (e.target.className) {
         case "close":
         case "modal":
-        modal.style.display = "none"
-        break;
+            modal.style.display = "none"
+            break;
     }
 })
 
+
+continueButton.addEventListener("click", (e) => {
+    let alertPop = async () => {
+        resolveAfter2MilliSeconds();
+    }
+    alertPop();
+})
