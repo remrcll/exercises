@@ -14,6 +14,13 @@ function resolveAfter6Seconds() {
     });
 }
 
+let promiseOfModal = async () => {
+    let result = await resolveAfter6Seconds();
+};
+
+promiseOfModal();
+
+
 function resolveAfter2MilliSeconds() {
     return new Promise(resolve => {
         setTimeout(() => {
@@ -22,11 +29,7 @@ function resolveAfter2MilliSeconds() {
     });
 }
 
-let promiseOfModal = async () => {
-    let result = await resolveAfter6Seconds();
-};
 
-promiseOfModal();
 
 // promiseOfModal.then(function (val) {
 //     console.log("User has been on the page for 60 seconds");
@@ -41,7 +44,6 @@ modal.addEventListener("click", (e) => {
             break;
     }
 })
-
 
 continueButton.addEventListener("click", (e) => {
     let alertPop = async () => {
